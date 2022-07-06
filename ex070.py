@@ -1,4 +1,4 @@
-total = contm = contmen = tot =  0
+total = contm = contmen = tot = 0
 menor = ' '
 print('-' * 20)
 print('PROGRAMA DE LOJINHA')
