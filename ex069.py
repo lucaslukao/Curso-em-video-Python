@@ -1,5 +1,5 @@
 print('-' * 20)
-print('CADASTRE UMA PESSOA')
+print('{:^20}'.format('CADASTRO'))
 conti = conth = contm = 0
 while True:
     print('-' * 20)
@@ -18,7 +18,7 @@ while True:
     while b not in 'SN':
         b = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if b == 'N':
-        print('FIM DO PROGRAMA!')
+        print('{:-^20}'.format('FIM DO PROGRAMA!'))
         print(f'''Tem {conti} pessoas com mais de 18 anos.
 Foram cadastrados {conth} homens.
 {contm} mulheres tem menos de 20 anos.''')
