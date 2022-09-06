@@ -18,10 +18,11 @@ while True:
     if confir == 'N':
         break
 print(f'Foram cadastradas {len(lista)} pessoas.')
-
-print(f'O maior peso foi {maior[0][1]}. Peso de ', end='')
-for c in maior:
-    print(c[0], end=', ')
-print(f'\nO menor peso foi de {menor[0][1]}. Peso de ', end='')
-for c in menor:
-    print(c[0], end=', ')
+print(f'O maior peso foi {maior}. Peso de ', end='')
+for c in lista:
+    if c[1] == maior:
+        print(f'{c[0]}, ', end=' ')
+print(f'\nO menor peso foi de {menor}. Peso de ', end='')
+for c in lista:
+    if c[1] == menor:
+        print(f'{c[0]}, ', end=' ')
