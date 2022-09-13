@@ -1,7 +1,7 @@
 dados = dict()
 total = 0
 gols = list()
-dados['nome'] = str(input('Qual o nome do jogador? '))
+dados['nome'] = str(input('Qual o nome do jogador? ')).strip()
 for c in range(1, int(input(f'Quantas partidas {dados["nome"]} jogou? ')) + 1):
     gols.append(int(input(f'Quantos gols ele fez na partida {c}º? ')))
     dados['gols'] = gols[:]
