@@ -49,7 +49,8 @@ while True:
     for c in range(0, tot):
         partidas.append(int(input(f'    Quantos gols na partida {c + 1}? ')))
     jogador['gols'] = partidas[:]
-    jogador['total'] = sum(partidas)  ## No final vai ficar: jogador = {'nome': '', 'gols': '[]', 'total': }
+    jogador['total'] = sum(partidas)
+# No final vai ficar: jogador = {'nome': '', 'gols': '[]', 'total': }
     time.append(jogador.copy())
     while True:
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
