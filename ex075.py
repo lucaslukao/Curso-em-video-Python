@@ -1,13 +1,13 @@
-tupla = (int(input('Digite um valor: ')), int(input('Digite outro valor: ')),
-         int(input('Digite mais um valor: ')), int(input('Digite o último valor: ')))
-print(f'O valor 9 apareceu {tupla.count(9)} vezes.')
-print(f'O primeiro valor 3 está na posiçã {tupla.index(3) + 1}.')if 3 in tupla else print('O valor 3 não foi digitado.')
-print('Os valores pares foram', end=' ')
-b = 0
-for t in tupla:
-    if t % 2 == 0:
-        print(t, end=' ')
+valores = (int(input('1° valor: ')), int(input('2° valor: ')),
+           int(input('3° valor: ')), int(input('4° valor: ')))
+print(f'O valor 9 apareceu {valores.count(9)} vezes')
+print(f'A posição {valores.index(3)} foi a primeira em que o 3 aparaceu.' if 3 in valores else '3 não foi digitado.')
+print('Os valores pares foram: ', end='')
+c = 0
+for k, v in enumerate(valores):
+    if valores[k] % 2 == 0:
+        print(v, end=' ')
     else:
-        b += 1
-        if b == 4:
+        c += 1
+        if c == 4:
             print('nenhum')
