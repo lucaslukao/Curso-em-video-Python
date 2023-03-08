@@ -1,2 +1,3 @@
-n1 = int(input('Digite um número: '))
-print('O seu dobro é: {} \nO seu triplo é {}\nA raiz quadrada é: {}'.format(n1*2, n1*3, n1**(1/2)))
+# Dobro, triplo e raiz quadrada.
+n = int(input('Digite um número: '))
+print(f'O dobro é {n*2} \nO triplo é {n*3} \nA raiz quadrada é {n**(1/2)}')

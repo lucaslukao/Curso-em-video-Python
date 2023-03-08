@@ -1,3 +1,4 @@
 # Antecessor e sucessor
-n1 = int(input('Digite um número: '))
-print('O sucessor é {} e o antecessor é {}.'.format(n1+1, n1-1))
+n = int(input('Digite um número: '))
+print(f'O antecessor de {n} é {n-1} e o sucessor é {n+1}.')
+

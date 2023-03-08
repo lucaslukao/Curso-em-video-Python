@@ -1,3 +1,4 @@
+# Tabuáda
 n = int(input('Digite um número: '))
 a = 0
 print('\033[36m-\033[m'*20)
