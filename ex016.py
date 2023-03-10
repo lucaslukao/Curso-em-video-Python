@@ -1,5 +1,10 @@
+# Parte inteira de um número
+
+# Importando o trunc de math
 # from math import trunc
-# n = float(input('Digite um número: '))
-# print('O número {} tem a parte inteira {}.'.format(n, trunc(n))
-n = float(input('Digite um valor: '))
-print('O valor {} e a sua porção inteira é {}'.format(n, int(n)))
+# n = float(input('Digite um número decimal: '))
+# print(f'A parte inteira do valor {n} é {trunc(n)}.')
+
+# Sem importar
+n = float(input('Digite um número decimal: '))
+print(f'A parte inteira de {n} é {int(n)}')

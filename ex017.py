@@ -1,7 +1,13 @@
+# Calculando a hipotenusa
+
+# Sem usar bibliotecas
+# ca = float(input('Digite o valor do cateto adjacente: '))
+# co = float(input('Digite o valor do cateto oposto: '))
+# print(f'O comprimento da hipotenusa é {(ca**2 + co**2) ** (1/2) :.2f}')
+
+
+# Usando biblioteca
 from math import hypot
-co = float(input('Digite o comprimento do cateto oposto: '))
-ca = float(input('Digite o comprimento do cateto adjacente: '))
-h = hypot(co, ca)
-print('O valor da hipotenusa é {:.2f}.'.format(h))
-'''h = (ca**2 + co**2) **(1/2)
-print('O valor da hipotenusa é {:.2f}.'.format(h))'''
+ca = float(input('Digite o cateto adjacente: '))
+co = float(input('Digite o cateto oposto: '))
+print(f'O valor da hipotenusa é {hypot(ca, co)}')
