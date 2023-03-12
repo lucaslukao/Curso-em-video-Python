@@ -1,9 +1,7 @@
 from random import shuffle
-a1 = input('Primeiro aluno: ')
-a2 = input('Segundo alunop: ')
-a3 = input('Terceiro aluno: ')
-a4 = input('Quarto aluno: ')
-lista = [a1, a2, a3, a4]
-shuffle(lista)
-print('A ordem de apresentação é:')
-print(lista)
+alunos = [str(input('1º aluno: ')),
+          str(input('2ª aluno: ')),
+          str(input('3º aluno: ')),
+          str(input('4º aluno: '))]
+shuffle(alunos)
+print(f'A ordem da apresentação é: \n {alunos}')

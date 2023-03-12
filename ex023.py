@@ -4,5 +4,3 @@ d = n // 10 % 10
 c = n // 100 % 10
 m = n // 1000 % 10
 print('Unidade: {} \nDezena: {} \nCentena:{} \nMilhar: {}'.format(u, d, c, m))
-
-
