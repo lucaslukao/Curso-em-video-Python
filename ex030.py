@@ -1,5 +1,5 @@
-n = int(input('Digite um número: '))
-if n % 2 == 0:
-    print('O número {} é par.'.format(n))
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print('Esse número é par!')
 else:
-    print('O número {} é ímpar.'.format(n))
+    print('Esse número é impar!')

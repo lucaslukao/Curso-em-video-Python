@@ -1,3 +1,3 @@
-n = str(input('Digite o nome de uma cidade: ')).strip()
-print(n[:5].upper() == 'SANTO')
-
+# Nome da cidade começa com SANTO
+cidade = str(input('Nome da cidade: ')).strip()
+print(cidade[:5].upper() == 'SANTO')

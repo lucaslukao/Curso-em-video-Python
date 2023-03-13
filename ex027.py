@@ -1,5 +1,3 @@
-n = str(input('Digite um nome: ')).strip().split()
-print('Primeiro nome: {} \nSegundo nome: {}'.format(n[0], n[len(n) - 1]))
-
-
-
+nome = str(input('Digite seu nome: ')).title().strip().split()
+print(f'''Seu primeiro nome é {nome[0]}.
+O seu último é {nome[len(nome) - 1]}.''')

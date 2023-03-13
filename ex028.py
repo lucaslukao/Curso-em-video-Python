@@ -1,9 +1,9 @@
+# Jogo para adivinhar qual número o computador 'pensou'
 from random import randint
-print('Pensando em um número de 0 a 5 ...')
-n1 = randint(0, 5) # Faz o computador pensar
-n2 = int(input('Qual número você acha que foi escolhido? ')) # O jogador tenta andivinhar
-if n2 == n1:
-    print('Você venceu!')
+jogador = int(input('''O computador chutou um número entre 0 e 5. 
+Consegue adivinhar qual? '''))
+computador = randint(0, 5)
+if jogador == computador:
+    print('Parabéns! Você acertou!')
 else:
-    print('Você perdeu! O número era {}.'.format(n1))
-
+    print(f'Errado! O computador chutou {computador}.')
